@@ -1,0 +1,45 @@
+@import './../styles/ds-main';
+@import './../styles/ds-fonts';
+
+.field {
+  outline: none;
+
+  padding: 5px;
+  margin: 1px 3px 3px 3px;
+
+  color: $color-read;
+
+  font-size: 0.9em;
+  font-family: font-semi-bold, serif, cursive;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: $color-default;
+  border-radius: 1px;
+
+  &:hover {
+    border-color: $color-default
+  }
+
+  &:active {
+    border-color: $color-active;
+  }
+
+  &:focus{
+    margin: 0 2px 2px 2px;
+
+    color: $color-default;
+
+    border-width: 2px;
+    border-color: $color-active;
+  }
+}
+
+.field-label{
+  padding-left: 3px;
+
+  font-size: 0.8em;
+  font-family: font-semi-bold, cursive;
+
+  padding-bottom: 0;
+}
