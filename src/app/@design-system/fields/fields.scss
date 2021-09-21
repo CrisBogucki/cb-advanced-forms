@@ -39,9 +39,10 @@
 
   &:placeholder-shown {
     font-size: small;
-    font-family: font-light, serif;
+    font-family: font-italic, serif;
   }
 }
+
 .field-label {
   padding-left: 3px;
 
@@ -50,6 +51,23 @@
 
   padding-bottom: 0;
 }
+
 .field-valid-message {
 
+  padding-left: 10px;
+  padding-top: 0;
+  padding-bottom: 5px;
+
+  font-size: 0.8em;
+  font-family: font-italic, cursive;
+}
+
+.warning {
+  border-color: $color-warning !important;
+  color: $color-warning !important;
+}
+
+.warning-color {
+  border-color: $color-warning !important;
+  color: $color-warning !important;
 }
