@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { DesignSystemModule } from './design-system/design-system.module';
+import { DesignSystemModule } from './@design-system/design-system.module';
 
 @NgModule({
   declarations: [
