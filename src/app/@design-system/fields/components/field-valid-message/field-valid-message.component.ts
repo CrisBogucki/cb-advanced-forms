@@ -1,13 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'ds-field-valid-message',
-  templateUrl: './field-valid-message.component.html',
-  styleUrls: ['./field-valid-message.component.scss']
+  template: `
+    <div class="field-valid-message">{{message}}</div>
+  `,
+  styleUrls: ['./../../fields.scss']
 })
 export class FieldValidMessageComponent implements OnInit {
 
-  constructor() { }
+  @Input() message?: string;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

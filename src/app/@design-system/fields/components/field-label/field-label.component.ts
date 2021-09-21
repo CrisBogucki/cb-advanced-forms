@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'ds-field-label',
   template: `
     <div class="field-label">
-      <label>Nazwa kontrolki</label>
+      <label>{{name}}</label>
     </div>
   `,
   styleUrls: ['./../../fields.scss']
@@ -12,6 +12,8 @@ import { Component, OnInit } from '@angular/core';
 export class FieldLabelComponent implements OnInit {
 
   constructor() { }
+
+  @Input() name?: string;
 
   ngOnInit(): void {
   }
