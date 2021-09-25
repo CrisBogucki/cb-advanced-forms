@@ -1,25 +1,33 @@
-@import './../styles/ds-main';
-@import './../styles/ds-fonts';
+@import './../../styles/ds-main';
+@import './../../styles/ds-fonts';
 
 
 .section {
   width: 100%;
 
-  padding: 5px;
-
   color: $color-read;
+  background: inherit;
 
   font-size: 0.9em;
   font-family: font-semi-bold, serif, cursive;
 
-  border-width: 1px;
-  border-style: dashed;
-  border-color: $color-default;
-  border-radius: 1px;
+  border-width: 0;
+
+  padding-left: 4%;
+  padding-right: 4%;
 
   .title {
     margin-left: -5px;
     color: $color-read;
   }
 
+  .valid {
+    color: $color-primary;
+  }
+
+  .not-valid {
+    color: $color-error;
+  }
+
 }
+

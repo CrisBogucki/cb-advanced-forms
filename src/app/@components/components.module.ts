@@ -1,24 +1,31 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { DesignSystemModule } from '../@design-system/design-system.module';
+import {DesignSystemModule} from '../@design-system/design-system.module';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
-import { SectionPersonComponent } from './section-person/section-person.component';
-import { SectionAddressComponent } from './section-address/section-address.component';
-import { SectionCompanyComponent } from './section-company/section-company.component';
+
+import {SectionAddressComponent} from './section-address/section-address.component';
+import {SectionCompanyComponent} from './section-company/section-company.component';
+import {DocumentComponent} from './document/document.component';
+import {DocumentHeaderComponent} from './document-header/document-header.component';
+import {SeciotnPersonalComponent} from './seciotn-personal/seciotn-personal.component';
 
 
 @NgModule({
   declarations: [
-    SectionPersonComponent,
     SectionAddressComponent,
-    SectionCompanyComponent
+    SectionCompanyComponent,
+    DocumentComponent,
+    DocumentHeaderComponent,
+    SeciotnPersonalComponent
   ],
   exports: [
-    SectionPersonComponent,
     SectionAddressComponent,
-    SectionCompanyComponent
+    SectionCompanyComponent,
+    DocumentComponent,
+    DocumentHeaderComponent,
+    SeciotnPersonalComponent
   ],
   imports: [
     CommonModule,
@@ -27,4 +34,5 @@ import { SectionCompanyComponent } from './section-company/section-company.compo
     ReactiveFormsModule
   ]
 })
-export class ComponentsModule { }
+export class ComponentsModule {
+}

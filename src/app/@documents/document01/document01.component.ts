@@ -16,18 +16,29 @@ export class Document01Component implements OnInit {
   ngOnInit(): void {
     let a = {
       document: {
+        personal:{
+          id: '589-145-78-55',
+          firstName: 'John',
+          lastName: 'Bush',
+          birtDate: '1762-02-11',
+          birtCity: 'New York',
+          nationality: 'USA',
+          sex: 'Men',
+          fatherName: 'Tom',
+          matherName: 'Ellie'
+        },
         address: {
-          city: 'Gorzów Wiepkopolski',
-          street: 'ul. Michała Kleofasa Ogińskiego',
-          number: '6c',
+          city: 'New York',
+          street: 'Brooklyn',
+          number: '27c',
           local: '2',
-          zip: '66-400'
+          zip: '11213'
         }
       }
     }
     this.form = this.documentLogic.createForm(a);
     this.form.valueChanges.subscribe(value => {
-      this.emitFormState();
+      //this.emitFormState();
     });
   }
 

@@ -2,10 +2,10 @@ import {Component, Input, OnInit} from '@angular/core';
 import {ControlContainer, FormGroup} from "@angular/forms";
 
 @Component({
-  selector: 'dsc-section-address',
-  templateUrl: './section-address.component.html'
+  selector: 'dsc-seciotn-personal',
+  templateUrl: './seciotn-personal.component.html'
 })
-export class SectionAddressComponent implements OnInit {
+export class SeciotnPersonalComponent implements OnInit {
 
   form!: FormGroup;
 
@@ -13,7 +13,7 @@ export class SectionAddressComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.form = this.controlContainer.control?.get("address") as FormGroup;
+    this.form = this.controlContainer.control?.get("personal") as FormGroup;
   }
 
 }

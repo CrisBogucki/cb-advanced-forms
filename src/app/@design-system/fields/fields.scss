@@ -1,5 +1,5 @@
-@import './../styles/ds-main';
-@import './../styles/ds-fonts';
+@import './../../styles/ds-main';
+@import './../../styles/ds-fonts';
 
 .field {
   box-shadow: none;
@@ -18,7 +18,11 @@
   border-width: 1px;
   border-style: solid;
   border-color: $color-default;
-  border-radius: 2px;
+  border-radius: 0px;
+
+  //border-top: none;
+  //border-left: none;
+  //border-right: none;
 
   &:hover {
     border-color: $color-default
@@ -60,10 +64,12 @@
   padding-top: 0;
   padding-bottom: 5px;
 
+  border-color: $color-warning;
+
   color: $color-warning !important;
 
   font-size: 0.8em;
-  font-family: font-italic, cursive;
+  font-family: font-regular, cursive;
 }
 
 .warning {
@@ -72,6 +78,5 @@
 }
 
 .warning-color {
-  border-color: $color-warning !important;
   color: $color-warning !important;
 }

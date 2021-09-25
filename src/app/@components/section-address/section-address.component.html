@@ -1,25 +1,12 @@
-<div [formGroup]="form" class="form">
-  <div class="row">
-    <div class="col-md-2">
-      <ds-field-text controlName="zip" label="Code" placeholder="Enter zip code"></ds-field-text>
-    </div>
-    <div class="col-md-10">
-      <ds-field-text controlName="city" label="City" placeholder="Enter city name"></ds-field-text>
-    </div>
-  </div>
+<ds-rows [formGroup]="form">
+  <ds-row>
+    <ds-field-text colSm="3" controlName="zip" label="Zip" placeholder="Enter zip code"></ds-field-text>
+    <ds-field-text colSm="9" controlName="city" label="City" placeholder="Enter city name"></ds-field-text>
+  </ds-row>
+  <ds-row>
+    <ds-field-text colSm="8" controlName="street" label="Street" placeholder="Enter street"></ds-field-text>
+    <ds-field-text colSm="2" controlName="number" label="Number" placeholder="Number"></ds-field-text>
+    <ds-field-text colSm="2" controlName="local" label="Local" placeholder="Local"></ds-field-text>
+  </ds-row>
+</ds-rows>
 
-  <div class="row">
-    <div class="col-md-8">
-      <ds-field-text controlName="street" label="Street" placeholder="Enter street"></ds-field-text>
-    </div>
-
-    <div class="col-md-2">
-      <ds-field-text controlName="number" label="Number" placeholder="Number"></ds-field-text>
-    </div>
-
-    <div class="col-md-2">
-      <ds-field-text controlName="local" label="Local" placeholder="Local"></ds-field-text>
-    </div>
-  </div>
-
-</div>

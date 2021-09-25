@@ -1,18 +1,28 @@
-
 <form [formGroup]="form">
-    <ds-section title="Address" formGroupName="document">
+  <dsc-document formGroupName="document">
+
+    <dsc-document-header></dsc-document-header>
+
+    <ds-section headings="4" title="REQUEST FOR COMMON SENSE WHEN BUILDING FORMS" align="center"></ds-section>
+
+    <ds-section headings="6" title="Personal">
+      <dsc-seciotn-personal></dsc-seciotn-personal>
+    </ds-section>
+
+    <ds-section headings="6" title="Address">
       <dsc-section-address></dsc-section-address>
     </ds-section>
+
+  </dsc-document>
+
 </form>
 
-<br><br>
 
-
-<ds-section title="isValid: {{form?.valid}} | isPristine: {{form?.pristine}}">
-  <ds-section>
+<div>
+  <ds-section title="isValid: {{form?.valid}} | isPristine: {{form?.pristine}}">
     <pre id="json">{{form?.value | json}}</pre>
   </ds-section>
-</ds-section>
+</div>
 
 
 

@@ -1,0 +1,29 @@
+@import "./../styles/ds-colors";
+
+.document {
+
+  background-color: #ffffff !important;
+  margin-top: 20px;
+  padding-bottom: 4%;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: $color-light-gray;
+
+  box-shadow: 1px 1px 4px $color-light-gray;
+
+}
+
+.document-header {
+  padding: 10px;
+
+  a {
+    float: right;
+    img {
+      margin-top: 50px;
+      margin-right: 50px;
+      width: 200px;
+
+    }
+  }
+}

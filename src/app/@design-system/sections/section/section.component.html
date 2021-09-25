@@ -1,6 +1,26 @@
 <div class="card section">
   <div class="card-body">
-    <h5 class="card-title title">{{title}}</h5>
+
+    <h3 class="card-title title" *ngIf="headings == '3'">
+      <i class="bi bi-check2-circle" *ngIf="showIcon"></i>
+      {{title}}
+    </h3>
+
+    <h4 class="card-title title" *ngIf="headings == '4'">
+      <i class="bi bi-check2-circle" *ngIf="showIcon"></i>
+      {{title}}
+    </h4>
+
+    <h5 class="card-title title" *ngIf="headings == '5'">
+      <i class="bi bi-check2-circle" *ngIf="showIcon"></i>
+      {{title}}
+    </h5>
+
+    <h6 class="card-title title" *ngIf="headings == '6'">
+      <i class="bi bi-check2-circle" *ngIf="showIcon"></i>
+      {{title}}
+    </h6>
+    <br>
     <p class="card-text">
       <ng-content></ng-content>
     </p>
