@@ -10,6 +10,7 @@ import {SectionCompanyComponent} from './section-company/section-company.compone
 import {DocumentComponent} from './document/document.component';
 import {DocumentHeaderComponent} from './document-header/document-header.component';
 import {SeciotnPersonalComponent} from './seciotn-personal/seciotn-personal.component';
+import { SectionOpinionComponent } from './section-opinion/section-opinion.component';
 
 
 @NgModule({
@@ -18,15 +19,17 @@ import {SeciotnPersonalComponent} from './seciotn-personal/seciotn-personal.comp
     SectionCompanyComponent,
     DocumentComponent,
     DocumentHeaderComponent,
-    SeciotnPersonalComponent
+    SeciotnPersonalComponent,
+    SectionOpinionComponent
   ],
-  exports: [
-    SectionAddressComponent,
-    SectionCompanyComponent,
-    DocumentComponent,
-    DocumentHeaderComponent,
-    SeciotnPersonalComponent
-  ],
+    exports: [
+        SectionAddressComponent,
+        SectionCompanyComponent,
+        DocumentComponent,
+        DocumentHeaderComponent,
+        SeciotnPersonalComponent,
+        SectionOpinionComponent
+    ],
   imports: [
     CommonModule,
     DesignSystemModule,

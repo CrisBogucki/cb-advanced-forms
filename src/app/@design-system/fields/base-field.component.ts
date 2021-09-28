@@ -39,8 +39,10 @@ export class BaseFieldComponent implements OnInit, OnDestroy {
     const control = this.controlContainer.control?.get(String(this.controlName))
     if (control) {
       this.subscribeObj = control?.valueChanges?.subscribe(() => {
-        const error = control?.errors;
-        this.message = this.formValidateService.createMessageError(error);
+        if(control.invalid && (control.dirty || control.touched)) {
+          const error = control?.errors;
+          this.message = this.formValidateService.createMessageError(error);
+        }
       });
     }
   }

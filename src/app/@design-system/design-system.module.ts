@@ -10,6 +10,7 @@ import {SectionComponent} from './sections/section/section.component';
 import {RowComponent} from './sections/row/row.component';
 import {RowsComponent} from './sections/rows/rows.component';
 import {BaseFieldComponent} from "./fields/base-field.component";
+import { FieldSelectComponent } from './fields/field-select/field-select.component';
 
 
 @NgModule({
@@ -22,17 +23,19 @@ import {BaseFieldComponent} from "./fields/base-field.component";
     SectionComponent,
     RowComponent,
     RowsComponent,
+    FieldSelectComponent,
   ],
-  exports: [
-    BaseFieldComponent,
-    FieldTextComponent,
-    FieldNumberComponent,
-    FieldDateComponent,
-    FieldAreaComponent,
-    SectionComponent,
-    RowComponent,
-    RowsComponent,
-  ],
+    exports: [
+        BaseFieldComponent,
+        FieldTextComponent,
+        FieldNumberComponent,
+        FieldDateComponent,
+        FieldAreaComponent,
+        SectionComponent,
+        RowComponent,
+        RowsComponent,
+        FieldSelectComponent,
+    ],
   imports: [
     CommonModule,
     FormsModule,

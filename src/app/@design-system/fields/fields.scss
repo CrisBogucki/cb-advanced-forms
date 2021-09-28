@@ -17,7 +17,7 @@
 
   border-width: 1px;
   border-style: solid;
-  border-color: $color-default;
+  border-color: $color-input-border;
   border-radius: 0px;
 
   //border-top: none;
@@ -25,7 +25,8 @@
   //border-right: none;
 
   &:hover {
-    border-color: $color-default
+    border-color: $color-primary;
+    cursor: pointer;
   }
 
   &:active {
@@ -39,6 +40,7 @@
 
     border-width: 2px;
     border-color: $color-active;
+    cursor: text;
   }
 
   &:placeholder-shown {
@@ -46,6 +48,40 @@
     font-family: font-italic, serif;
   }
 }
+
+select option {
+  background:transparent;
+  border:0;
+}
+
+select.field{
+
+  .option {
+    font-size: 0.9em;
+    font-family: font-semi-bold, serif, cursive;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: $color-input-border;
+    border-radius: 0;
+
+
+    color: red;
+
+
+    border: 2px solid red;
+
+
+    .selection  {
+      color: $color-primary;
+    }
+  }
+
+  &:focus {
+    cursor: pointer;
+  }
+}
+
 
 .field-label {
 

@@ -23,7 +23,7 @@ export class Document01Component implements OnInit {
           birtDate: '1762-02-11',
           birtCity: 'New York',
           nationality: 'USA',
-          sex: 'Men',
+          sex: 'F',
           fatherName: 'Tom',
           matherName: 'Ellie'
         },
@@ -33,21 +33,20 @@ export class Document01Component implements OnInit {
           number: '27c',
           local: '2',
           zip: '11213'
+        },
+        opinion: {
+          feedback: "Very fair comments"
         }
       }
     }
     this.form = this.documentLogic.createForm(a);
-    this.form.valueChanges.subscribe(value => {
-      //this.emitFormState();
-    });
   }
 
-  private emitFormState() {
-    console.log({
-      isValid: this.form.valid,
-      isPristine: this.form.pristine,
-      value: this.form.value
-    });
+
+
+  onValidForm() {
+
   }
+
 
 }

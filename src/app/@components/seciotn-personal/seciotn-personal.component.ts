@@ -9,6 +9,17 @@ export class SeciotnPersonalComponent implements OnInit {
 
   form!: FormGroup;
 
+  sex = [{
+    key: "M",
+    value: "Male"
+  }, {
+    key: "F",
+    value: "Female"
+  }, {
+    key: "O",
+    value: "Other"
+  }]
+
   constructor(private controlContainer: ControlContainer) {
   }
 
