@@ -16,6 +16,12 @@ export class FormValidateService {
       result = "Pole jest wymagane"
     }
 
+    if (error?.min){
+      if (error?.min.actual < error?.min.min) {
+        result = `Pole musi zawierac ustalone minimum ${error?.min.min}`;
+      }
+    }
+
     return result;
   }
 

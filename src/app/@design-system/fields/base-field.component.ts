@@ -26,6 +26,8 @@ export class BaseFieldComponent implements OnInit, OnDestroy {
   subscribeObj?: Subscription;
   showRequiredStar: boolean = false;
 
+  control: any;
+
   constructor(private controlContainer: ControlContainer, private formValidateService: FormValidateService) {
   }
 
@@ -36,12 +38,14 @@ export class BaseFieldComponent implements OnInit, OnDestroy {
   }
 
   errorHandler(): void {
-    const control = this.controlContainer.control?.get(String(this.controlName))
-    if (control) {
-      this.subscribeObj = control?.valueChanges?.subscribe(() => {
-        if(control.invalid && (control.dirty || control.touched)) {
-          const error = control?.errors;
+    this.control = this.controlContainer.control?.get(String(this.controlName))
+    if (this.control) {
+      this.subscribeObj = this.control?.valueChanges?.subscribe(() => {
+        if(this.control.invalid && (this.control.dirty || this.control.touched)) {
+          const error = this.control?.errors;
           this.message = this.formValidateService.createMessageError(error);
+        } else {
+          this.message = "";
         }
       });
     }

@@ -14,7 +14,7 @@ export class Document01Component implements OnInit {
   }
 
   ngOnInit(): void {
-    let a = {
+    let initValue = {
       document: {
         personal:{
           id: '589-145-78-55',
@@ -22,31 +22,24 @@ export class Document01Component implements OnInit {
           lastName: 'Bush',
           birtDate: '1762-02-11',
           birtCity: 'New York',
-          nationality: 'USA',
+          nationality: 'Polish',
           sex: 'F',
           fatherName: 'Tom',
           matherName: 'Ellie'
         },
         address: {
-          city: 'New York',
-          street: 'Brooklyn',
-          number: '27c',
-          local: '2',
-          zip: '11213'
+          city: 'Berlin',
+          street: 'Potsdamer Straße',
+          number: '65',
+          local: '1',
+          zip: '10785'
         },
         opinion: {
-          feedback: "Very fair comments"
+          feedback: "OK"
         }
       }
     }
-    this.form = this.documentLogic.createForm(a);
+    this.form = this.documentLogic.createForm(initValue);
   }
-
-
-
-  onValidForm() {
-
-  }
-
 
 }

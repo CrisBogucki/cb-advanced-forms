@@ -5,3 +5,4 @@ import { Component} from '@angular/core';
   template: `<div class="row"><ng-content></ng-content></div>`,
 })
 export class RowComponent {}
+

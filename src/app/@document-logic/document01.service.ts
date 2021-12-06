@@ -29,11 +29,11 @@ export class Document01Service {
           street: ['', Validators.required],
           city: ['', Validators.required],
           number: ['', Validators.required],
-          local: ['', Validators.required],
+          local: ['', [Validators.min(10)]],
           zip: ['', [Validators.required]],
         }),
         opinion: this.formBuilder.group({
-          feedback: ['', Validators.required],
+          feedback: ['',[Validators.required]],
         })
       }),
     })
