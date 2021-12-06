@@ -13,12 +13,12 @@ export class FormValidateService {
     let result: string = "";
 
     if (error?.required == true) {
-      result = "Pole jest wymagane"
+      result = "Field is required"
     }
 
     if (error?.min){
       if (error?.min.actual < error?.min.min) {
-        result = `Pole musi zawierac ustalone minimum ${error?.min.min}`;
+        result = `Field must be greater than ${error?.min.min}`;
       }
     }
 
