@@ -4,11 +4,6 @@ import { Component, OnInit } from '@angular/core';
   selector: 'ds-rows',
   template: `<section><div class="form"><ng-content></ng-content></div></section>`
 })
-export class RowsComponent implements OnInit {
+export class RowsComponent {}
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
-
-}
