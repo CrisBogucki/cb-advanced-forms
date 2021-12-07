@@ -2,7 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {ControlContainer, FormGroup} from "@angular/forms";
 
 @Component({
-  selector: 'dsc-section-address',
+  selector: 'dsc-section-address_1_1',
   templateUrl: './section-address.component.html'
 })
 export class SectionAddressComponent implements OnInit {

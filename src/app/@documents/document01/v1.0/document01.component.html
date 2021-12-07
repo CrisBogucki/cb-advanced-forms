@@ -1,0 +1,40 @@
+<form [formGroup]="form">
+
+  <dsc-document-header></dsc-document-header>
+
+  <dsc-document formGroupName="document">
+
+    <ds-section headings="4" title="REQUEST FOR COMMON SENSE WHEN BUILDING FORMS" align="center"></ds-section>
+
+    <ds-section headings="6" title="Personal">
+      <dsc-seciotn-personal></dsc-seciotn-personal>
+    </ds-section>
+
+    <ds-section headings="6" title="Address">
+      <dsc-section-address_1_0></dsc-section-address_1_0>
+    </ds-section>
+
+    <ds-section headings="6" title="Notes">
+      <dsc-section-opinion></dsc-section-opinion>
+    </ds-section>
+
+  </dsc-document>
+
+</form>
+
+<div>
+  <ds-section title="isValid: {{form?.valid}} | isPristine: {{form?.pristine}} | status: {{form?.status}}">
+    <pre type="json">{{form?.getRawValue() | json}}</pre>
+  </ds-section>
+</div>
+
+
+
+
+
+
+
+
+
+
+

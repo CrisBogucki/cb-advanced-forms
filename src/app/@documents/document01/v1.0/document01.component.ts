@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Document01Service} from "../../@document-logic/document01.service";
+import {Document01Service} from "./document01.service";
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
